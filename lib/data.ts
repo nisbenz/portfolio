@@ -44,6 +44,6 @@ export const projects = [
 
 export const socialLinks = {
     github: "https://github.com/nisbenz",
-    linkedin: "https://linkedin.com/in/mohamed-anis-ben-azza",
-    email: "contact@example.com", // Replace with actual email if desired
+    linkedin: "https://www.linkedin.com/in/mohamed-anis-ben-azza-a51760359/",
+    email: "benazzaanis783@gmail.com", 
 };

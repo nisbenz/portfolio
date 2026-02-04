@@ -41,9 +41,6 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-
-            {/* Gradient Overlay */}
-            <div className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-b from-black via-transparent to-black" />
         </section>
     );
 }

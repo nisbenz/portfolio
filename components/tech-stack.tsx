@@ -5,7 +5,7 @@ import {
   SiPython,
   SiJavascript,
   SiTypescript,
-  SiCplusplus,
+  SiC,
   SiSharp,
   SiGo,
   SiReact,
@@ -29,7 +29,7 @@ import { techStack } from "@/lib/data";
 const techIcons: Record<string, any> = {
   Python: SiPython,
   Java: FaJava,
-  C: SiCplusplus,
+  C: SiC,
   "C#": SiSharp,
   Go: SiGo,
   TypeScript: SiTypescript,

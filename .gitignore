@@ -1,0 +1,12 @@
+/node_modules
+/.next/
+/out/
+*.tsbuildinfo
+next-env.d.ts
+.env*
+
+proxy_requests.json
+Mohamed_Anis_Ben_Azza_CV-3.pdf
+
+.DS_Store
+Thumbs.db

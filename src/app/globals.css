@@ -154,3 +154,149 @@ footer {
   color: var(--bg);
 }
 
+.intro p {
+  margin: 0 0 1.1rem;
+}
+
+.link-row {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
+.link-row a {
+  color: var(--muted);
+}
+
+.link-row a::before {
+  content: "â†’ ";
+  color: var(--accent);
+}
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-list li {
+  padding: 0.3rem 0;
+}
+
+.post-list time {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-right: 0.75rem;
+}
+
+.more-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.work-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.work-list li {
+  padding: 0.9rem 0;
+  border-top: 1px dashed var(--border);
+}
+
+.work-list li:first-child {
+  border-top: none;
+  padding-top: 0.25rem;
+}
+
+.work-list .desc {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0.15rem 0 0;
+}
+
+.post-header {
+  margin-top: 2.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-header h1 {
+  margin: 0 0 0.6rem;
+}
+
+.post-meta {
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.post-meta .tag {
+  margin-left: 0.75rem;
+}
+
+.prose {
+  margin-bottom: 3rem;
+}
+
+.prose h2 {
+  font-size: 1.05rem;
+  margin: 2.25rem 0 0.9rem;
+}
+
+.prose h2::before {
+  content: "## ";
+  color: var(--accent);
+}
+
+.prose h3 {
+  font-size: 0.95rem;
+  margin: 1.75rem 0 0.75rem;
+}
+
+.prose h3::before {
+  content: "### ";
+  color: var(--accent);
+}
+
+.prose p,
+.prose ul,
+.prose ol {
+  margin: 1.05rem 0;
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.4rem;
+}
+
+.prose li::marker {
+  color: var(--accent);
+}
+
+.prose blockquote {
+  margin: 1.25rem 0;
+  padding: 0.1rem 0 0.1rem 1.1rem;
+  border-left: 2px solid var(--accent);
+  color: var(--muted);
+}
+
+.prose a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose a:hover {
+  color: var(--accent);
+}
+
+.prose img {
+  max-width: 100%;
+  height: auto;
+}
+
+.prose hr {

@@ -13,7 +13,7 @@ export default function AboutPage() {
         I&apos;m Mohamed Anis Ben Azza, a computer science undergraduate at
         USTHB (Université des Sciences et de la Technologie Houari Boumediene)
         in Algiers, Algeria, specializing in artificial intelligence. I&apos;m
-        currently in my 3rd year of the engineering cycle, working toward the
+        currently in my 4th year of the engineering cycle, working toward the
         State Engineering Degree in Computer Science.
       </p>
       <p>
@@ -21,7 +21,7 @@ export default function AboutPage() {
         from scratch: an autograd engine in C, a transformer trained on Darija,
         an I-JEPA reimplementation, a GPT-2 inference engine in C++. Reading
         papers is easy; making them run is where the understanding is. The
-        rest — operating systems, software engineering, algorithms — I&apos;m
+        rest  operating systems, software engineering, algorithms  I&apos;m
         learning the normal way, in class.
       </p>
 

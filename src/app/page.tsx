@@ -8,7 +8,7 @@ const selectedWork = [
   {
     name: "TensorLib",
     url: "https://github.com/nisbenz/TensorLib",
-    desc: "A from-scratch, pure-C deep learning library for CPU-only training — autograd, SIMD matmul, GPT-style decoder.",
+    desc: "A from-scratch, pure-C deep learning library for CPU-only training  autograd, SIMD matmul, GPT-style decoder.",
   },
   {
     name: "mAIcro",
@@ -36,8 +36,8 @@ export default async function Home() {
           <a href="https://www.usthb.dz" target="_blank" rel="noreferrer">
             USTHB
           </a>{" "}
-          (Algiers), specializing in AI. I like building things from scratch —
-          deep learning libraries in C, transformer models, inference engines —
+          (Algiers), specializing in AI. I like building things from scratch
+          deep learning libraries in C, transformer models, inference engines
           because taking something apart is the only way I really understand
           it.
         </p>

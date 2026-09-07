@@ -6,8 +6,8 @@ tags: ["tensorlib", "simd", "c"]
 ---
 
 Matrix multiplication is the hot loop of deep learning, so when I started
-TensorLib — a pure-C deep learning library with zero external ML
-dependencies — it was obvious the whole project would live or die by my
+TensorLib  a pure-C deep learning library with zero external ML
+dependencies  it was obvious the whole project would live or die by my
 matmul. This post is a build log of that kernel.
 
 ## The naive version is a memory problem
@@ -15,7 +15,7 @@ matmul. This post is a build log of that kernel.
 The textbook triple loop is not slow because of flops; it's slow because it
 walks memory in the worst possible pattern. Each inner product streams a
 full row of A and a full column of B, and columns of a row-major matrix are
-stride-`n` apart — every load misses cache.
+stride-`n` apart  every load misses cache.
 
 ## Blocked tiling + packed RHS
 
@@ -53,14 +53,14 @@ for (int p = 0; p < KC; p++) {
 }
 ```
 
-Eight accumulators, one broadcast per row, one vector load per column — the
+Eight accumulators, one broadcast per row, one vector load per column  the
 arithmetic intensity works out so the kernel is compute-bound rather than
 load-bound, which is the whole game.
 
 ## Numbers
 
 I benchmarked against OpenBLAS's `cblas_sgemm` on the same machine, same
-threading rules. The gap at large sizes is real — OpenBLAS wins, obviously —
+threading rules. The gap at large sizes is real  OpenBLAS wins, obviously 
 but the interesting part is how small the gap gets once packing and blocking
 are in place, and exactly where the gap opens up (cache-aliasing sizes,
 odd N, transposed layouts).

@@ -42,15 +42,9 @@ body {
 .shell {
   width: 100%;
   max-width: 44rem;
-  margin: 0;
+  margin: 0 auto;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
-
-@media (min-width: 56rem) {
-  .shell {
-    margin-left: clamp(1.5rem, 9vw, 8rem);
-  }
 }
 
 a {
@@ -418,4 +412,3 @@ footer {
 .section-entry li::marker {
   color: var(--accent);
 }
-
